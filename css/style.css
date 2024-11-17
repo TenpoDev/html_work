@@ -1,3 +1,5 @@
+@import "loader.css";
+
 body {
     margin: 0;
     padding: 0;
@@ -105,6 +107,13 @@ main > div {
     position: absolute;
     height: 100%;
     width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Effetto di dissolvenza */
+}
+
+.slide.active {
+    display: block;
+    opacity: 1;
 }
 
 .slide-container .slide .item {
@@ -152,6 +161,7 @@ main > div {
     margin: 30px 20%;
     color: #d4edda;
     text-shadow: 0 30px 50px #505050;
+    animation: fadeIn 3s forwards;
 }
 
 .slide-container .slide .item .content .description {
@@ -159,16 +169,17 @@ main > div {
     font-size: 32px;
     color: #d4edda;
     text-shadow: 0 30px 50px #505050;
+    animation: fadeIn 5s forwards;
 }
 
-#button {
+.button {
     background-color: #ffffff;
     border: none;
     color: rgb(0, 0, 0);
     padding: 0.7em 1.7em;
     text-align: center;
     font-size: 16px;
-    opacity: 0.6;
+    opacity: 1;
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
@@ -176,15 +187,16 @@ main > div {
     border-radius: 5px;
     font-weight: bold;
     box-shadow: 0 30px 50px #505050;
+    z-index: 50;
+    position: relative;
 }
 
-.content #button {
+.content .button {
     margin: 15px 20%;
-
 }
 
-#button:hover {
-    opacity: 1;
+.button:hover {
+    opacity: 0.6;
 }
 
 .slide-cursor {
@@ -194,3 +206,13 @@ main > div {
     bottom: 10px;
 }
 
+
+/* Animazione generale per fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

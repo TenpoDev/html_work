@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina con Header e Footer Fissi</title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <!-- Header fisso -->
@@ -19,6 +20,9 @@
 
 <!-- Contenuto principale scrollabile -->
 <main>
+    <div class="loader-overlay">
+        <div class="loader"></div>
+    </div>
     <div id="Home">
         <div class="slide-container">
             <div class="slide">
@@ -26,7 +30,7 @@
                     <div class="content">
                         <div class="title"><h1>TITOLO</h1></div>
                         <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        <a href="/" id="button">Read More</a>
+                        <a href="/" class="button">Read More 1</a>
                     </div>
                 </div>
             </div>
@@ -35,7 +39,7 @@
                     <div class="content">
                         <div class="title"><h1>TITOLO</h1></div>
                         <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        <a href="/" id="button">Read More</a>
+                        <a href="/" class="button">Read More 2</a>
                     </div>
                 </div>
             </div>
@@ -44,7 +48,7 @@
                     <div class="content">
                         <div class="title"><h1>TITOLO</h1></div>
                         <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        <a href="/" id="button">Read More</a>
+                        <a href="/" class="button">Read More 3</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +57,7 @@
                     <div class="content">
                         <div class="title"><h1>TITOLO</h1></div>
                         <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        <a href="/" id="button">Read More</a>
+                        <a href="/" class="button">Read More 4</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +66,7 @@
                     <div class="content">
                         <div class="title"><h1>TITOLO</h1></div>
                         <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        <a href="/" id="button">Read More</a>
+                        <a href="/" class="button">Read More 5</a>
                     </div>
                 </div>
             </div>
@@ -75,11 +79,10 @@
             <div class="column" style="background-image: url(./assets/images/5.jpg);"></div>
         </div>
         <div class="slide-cursor">
-            <button id="button" onclick="plusSlides(-1)">&#10094;</button>
-            <button id="button" onclick="plusSlides(1)">&#10095;</button>
+            <button id="prev" class="button" onclick="changeSlide(-1)">&#10094;</button>
+            <button id="next" class="button" onclick="changeSlide(1)">&#10095;</button>
         </div>
     </div>
-
     <div id="About Us">About Us</div>
     <div id="Contact">Contact</div>
 </main>
@@ -93,6 +96,8 @@
         <span>&copy; 2024 La Tua Azienda</span>
     </nav>
 </footer>
+<script src="./js/slider.js"> </script>
+<script src="./js/loader.js"> </script>
 </body>
 </html>
 

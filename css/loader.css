@@ -1,0 +1,43 @@
+/* Schermata di caricamento che copre tutta la pagina */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitrasparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Assicurati che il loader stia sopra al contenuto */
+}
+
+/* Style per il cerchio di caricamento */
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+/* Animazione del cerchio di caricamento */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Style per il contenuto della pagina che sarà nascosto fino al completamento del caricamento */
+.content {
+    display: none;
+}
+
+/* Nasconde la schermata di caricamento quando la pagina è pronta */
+body.loaded .loader-overlay {
+    display: none;
+}
+
+body.loaded .content {
+    display: block;
+}
