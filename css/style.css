@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Stile dell'header */
+header {
+    position: fixed; /* Rende l'header fisso */
+    top: 0;
+    left: 0;
+    width: 100%; /* Occupa tutta la larghezza */
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
+    z-index: 1000; /* Assicura che l'header sia sopra gli altri elementi */
+}
+
+/* Stile del footer */
+footer {
+    position: fixed; /* Rende il footer fisso */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Occupa tutta la larghezza */
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
+    z-index: 1000; /* Assicura che il footer sia sopra gli altri elementi */
+}
+
+/* Stile della navigazione nel header */
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Stile della navigazione nel footer */
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Stile del main */
+main {
+    display: flex;
+    flex-direction: column; /* Organizza i div in colonna */
+}
+
+main > div {
+    height: 100vh; /* Ogni sezione occupa l'altezza della finestra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    font-size: 2rem;
+}
+
+/* Colori di sfondo differenti per le sezioni */
+#About\ Us {
+    background-color: #d4edda;
+}
+
+#Contact {
+    background-color: #d1ecf1;
+}
+
+/* Responsive design per dispositivi più piccoli */
+@media (max-width: 600px) {
+    header, footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    header nav a, footer nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main > div {
+        font-size: 1.5rem;
+    }
+}
+
+.slide-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Allinea l'immagine al centro orizzontalmente */
+    align-items: center; /* Allinea l'immagine al centro verticalmente */
+}
+
+.slide-container .slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.slide-container .slide .item {
+    width: 100%; /* Occupa tutta la larghezza del container */
+    height: 100%; /* Occupa tutta l'altezza del container */
+    background-size: cover; /* L'immagine copre interamente il container */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+}
+
+.slide-gallery {
+    display: flex;
+    height: 66%;
+    width: 55%;
+    z-index: 500;
+    position: absolute;
+    right: 0;
+
+}
+
+.slide-gallery .column:nth-child(1),
+.slide-gallery .column:nth-child(2),
+.slide-gallery .column:nth-child(3) {
+    width: 33%;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    transform: translate(0, 15%);
+}
+
+.slide-gallery .column:nth-last-child(-n+2) {
+    display: none;
+}
+
+.slide-container .slide .item .content {
+    top: 50%;
+    width: 35%;
+    height: 30%;
+    position: absolute;
+    flex-direction: column;
+}
+
+.slide-container .slide .item .content .title {
+    margin: 30px 20%;
+    color: #d4edda;
+    text-shadow: 0 30px 50px #505050;
+}
+
+.slide-container .slide .item .content .description {
+    margin: 15px 20%;
+    font-size: 32px;
+    color: #d4edda;
+    text-shadow: 0 30px 50px #505050;
+}
+
+#button {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 0.7em 1.7em;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 30px 50px #505050;
+}
+
+.content #button {
+    margin: 15px 20%;
+
+}
+
+#button:hover {
+    opacity: 1;
+}
+
+.slide-cursor {
+    position: absolute;
+    z-index: 600;
+    justify-content: center;
+    bottom: 10px;
+}
+

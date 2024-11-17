@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina con Header e Footer Fissi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Header fisso -->
+<header>
+    <nav>
+        <span style="font-weight: bold;">Logo</span> |
+        <a href="#Home">Home</a> |
+        <a href="#About Us">About Us</a> |
+        <a href="#Contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Contenuto principale scrollabile -->
+<main>
+    <div id="Home">
+        <div class="slide-container">
+            <div class="slide">
+                <div class="item" style="background-image: url(./assets/images/1.jpeg);">
+                    <div class="content">
+                        <div class="title"><h1>TITOLO</h1></div>
+                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <a href="/" id="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="item" style="background-image: url(./assets/images/2.jpg);">
+                    <div class="content">
+                        <div class="title"><h1>TITOLO</h1></div>
+                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <a href="/" id="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="item" style="background-image: url(./assets/images/3.jpg);">
+                    <div class="content">
+                        <div class="title"><h1>TITOLO</h1></div>
+                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <a href="/" id="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="item" style="background-image: url(./assets/images/4.jpg);">
+                    <div class="content">
+                        <div class="title"><h1>TITOLO</h1></div>
+                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <a href="/" id="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="item" style="background-image: url(./assets/images/5.jpg);">
+                    <div class="content">
+                        <div class="title"><h1>TITOLO</h1></div>
+                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <a href="/" id="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-gallery">
+            <div class="column" style="background-image: url(./assets/images/1.jpeg);"></div>
+            <div class="column" style="background-image: url(./assets/images/2.jpg);"></div>
+            <div class="column" style="background-image: url(./assets/images/3.jpg);"></div>
+            <div class="column" style="background-image: url(./assets/images/4.jpg);"></div>
+            <div class="column" style="background-image: url(./assets/images/5.jpg);"></div>
+        </div>
+        <div class="slide-cursor">
+            <button id="button" onclick="plusSlides(-1)">&#10094;</button>
+            <button id="button" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div id="About Us">About Us</div>
+    <div id="Contact">Contact</div>
+</main>
+
+<!-- Footer fisso -->
+<footer>
+    <nav>
+        <a href="#Home">Home</a> |
+        <a href="#About Us">About Us</a> |
+        <a href="#Contact">Contact</a> |
+        <span>&copy; 2024 La Tua Azienda</span>
+    </nav>
+</footer>
+</body>
+</html>
+
+
