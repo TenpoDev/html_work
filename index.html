@@ -127,34 +127,37 @@
                         <hr>
                         <ul class="social-media-list">
                             <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-github" aria-hidden="true"></i></a>
+                                <i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
                             </li>
                             <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
                             </li>
                             <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
                             </li>
                             <li><a href="#" target="_blank" class="contact-icon">
-                                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                             </li>
                         </ul>
                         <hr>
                         <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" id="contact-form">
                     <label>
-                        <input name="name" type="text" class="feedback-input" placeholder="Name"/>
+                        <input name="form_name" type="text" class="feedback-input" placeholder="Name"/>
                     </label>
                     <label>
-                        <input name="phone" type="text" class="feedback-input" placeholder="Phone"/>
+                        <input name="form_surname" type="text" class="feedback-input" placeholder="Surname"/>
                     </label>
                     <label>
-                        <input name="email" type="text" class="feedback-input" placeholder="Email"/>
+                        <input name="form_phone" type="tel" class="feedback-input" pattern="[+]{1}[0-9]{1,3}[0-9]{4,14}"  placeholder="Phone"/>
                     </label>
                     <label>
-                        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                        <input name="form_email" type="email" class="feedback-input" placeholder="Email"/>
+                    </label>
+                    <label>
+                        <textarea name="form_message" class="feedback-input" placeholder="Comment"></textarea>
                     </label>
                     <input type="submit" value="SUBMIT"/>
                 </form>
@@ -172,8 +175,10 @@
         <span>&copy; 2024 La Tua Azienda</span>
     </nav>
 </footer>
-<script src="./js/slider.js"></script>
-<script src="./js/loader.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript" src="./js/slider.js"></script>
+<script type="text/javascript" src="./js/loader.js"></script>
+<script type="text/javascript" src="./js/email.js"></script>
 </body>
 </html>
 
