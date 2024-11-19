@@ -49,6 +49,7 @@
 }
 
 .bio-layout {
+    max-height: calc(100vh - 20vh);
     margin: 20px;
     position: relative;
     display: grid;
@@ -80,37 +81,36 @@
 }
 
 .bio-description {
-    grid-column: 2;
+    padding: 20px;
     display: grid;
-    margin: 25px;
-    grid-template-rows: auto auto;
-    align-content: space-around;
-    align-items: flex-end; /* Posiziona il testo in basso */
-    justify-content: center; /* Allinea il testo orizzontalmente al centro */
-}
-
-.bio-description .quote {
-
-    grid-row: 1;
-    width: 100%; /* Si adatta alla larghezza del contenitore */
-    text-align: center; /* Centra il testo */
-    margin: 0; /* Rimuove margini che potrebbero causare sbordamenti */
-    box-sizing: border-box;
-    border-bottom-color: whitesmoke;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-end-end-radius: 4px;
-    border-end-start-radius: 4px;
-    color: white;
+    grid-template-rows: auto; /* Prima riga (quote) è dinamica, seconda (biography) occupa il resto */
+    height: 100%; /* Assicurati che il contenitore abbia un'altezza definita */
+    max-height: 90%; /* Limita l'altezza totale della bio-description */
+    overflow: hidden; /* Evita overflow non desiderati */
 }
 
 .bio-description .biography {
-    grid-row: 2;
-    width: 100%; /* Si adatta alla larghezza del contenitore */
-    text-align: center; /* Centra il testo */
-    margin: 0; /* Rimuove margini che potrebbero causare sbordamenti */
-    box-sizing: border-box;
+    grid-row: 1; /* Posiziona nella seconda riga */
+    overflow-y: auto; /* Rende scrollabile */
+    padding: 10px;
+    text-align: justify;
     color: white;
+    font-size: 1rem; /* Modifica la dimensione del testo per .biography */
+    font-weight: normal; /* Puoi cambiare lo spessore del testo */
+    line-height: 1.6; /* Imposta lo spazio tra le righe */
+}
+
+/* Nasconde la scrollbar senza disabilitare lo scroll */
+.bio-description .biography::-webkit-scrollbar {
+    display: none;
+}
+
+.bio-description .biography {
+    scrollbar-width: none; /* Per Firefox */
+}
+
+.bio-description::-webkit-scrollbar {
+    display: none; /* Nasconde la scrollbar (Webkit: Chrome, Edge, Safari) */
 }
 
 .bio-name {

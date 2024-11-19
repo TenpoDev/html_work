@@ -1,9 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: black;
-}
+
 
 /* Stile dell'header */
 header {
@@ -63,7 +58,7 @@ main > div {
     height: 100vh; /* Ogni sezione occupa l'altezza della finestra */
     display: flex;
     border: 1px solid #ccc;
-    font-size: 2rem;
+    /*font-size: 2rem;*/
 }
 
 #Home {
@@ -71,26 +66,22 @@ main > div {
     align-items: center;
 }
 
-#Contact {
-    background-color: #d1ecf1;
-}
+/*!* Responsive design per dispositivi più piccoli *!*/
+/*@media (max-width: 600px) {*/
+/*    header, footer {*/
+/*        padding: 10px;*/
+/*        text-align: center;*/
+/*    }*/
 
-/* Responsive design per dispositivi più piccoli */
-@media (max-width: 600px) {
-    header, footer {
-        padding: 10px;
-        text-align: center;
-    }
+/*    header nav a, footer nav a {*/
+/*        display: block;*/
+/*        margin: 5px 0;*/
+/*    }*/
 
-    header nav a, footer nav a {
-        display: block;
-        margin: 5px 0;
-    }
-
-    main > div {
-        font-size: 1.5rem;
-    }
-}
+/*    main > div {*/
+/*        font-size: 1.5rem;*/
+/*    }*/
+/*}*/
 
 .slide-container {
     width: 100%;
