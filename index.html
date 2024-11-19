@@ -20,15 +20,15 @@
 
 <!-- Contenuto principale scrollabile -->
 <main>
-    <div class="loader-overlay">
-        <div class="loader"></div>
-    </div>
+    <!--    <div class="loader-overlay">-->
+    <!--        <div class="loader"></div>-->
+    <!--    </div>-->
     <div id="Home">
         <div class="slide-container">
             <div class="slide">
                 <div class="item" style="background-image: url(./assets/images/1.jpeg);">
                     <div class="content">
-                        <div class="title"><h1>TITOLO</h1></div>
+                        <div class="title"><h1><span>TITOLO</span></h1></div>
                         <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                         <a href="/" class="button">Read More 1</a>
                     </div>
@@ -37,7 +37,7 @@
             <div class="slide">
                 <div class="item" style="background-image: url(./assets/images/2.jpg);">
                     <div class="content">
-                        <div class="title"><h1>TITOLO</h1></div>
+                        <div class="title"><h1><span>TITOLO</span></h1></div>
                         <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                         <a href="/" class="button">Read More 2</a>
                     </div>
@@ -46,7 +46,7 @@
             <div class="slide">
                 <div class="item" style="background-image: url(./assets/images/3.jpg);">
                     <div class="content">
-                        <div class="title"><h1>TITOLO</h1></div>
+                        <div class="title"><h1><span>TITOLO</span></h1></div>
                         <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                         <a href="/" class="button">Read More 3</a>
                     </div>
@@ -55,7 +55,7 @@
             <div class="slide">
                 <div class="item" style="background-image: url(./assets/images/4.jpg);">
                     <div class="content">
-                        <div class="title"><h1>TITOLO</h1></div>
+                        <div class="title"><h1><span>TITOLO</span></h1></div>
                         <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                         <a href="/" class="button">Read More 4</a>
                     </div>
@@ -64,7 +64,7 @@
             <div class="slide">
                 <div class="item" style="background-image: url(./assets/images/5.jpg);">
                     <div class="content">
-                        <div class="title"><h1>TITOLO</h1></div>
+                        <div class="title"><h1><span>TITOLO</span></h1></div>
                         <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                         <a href="/" class="button">Read More 5</a>
                     </div>
@@ -83,7 +83,27 @@
             <button id="next" class="button" onclick="changeSlide(1)">&#10095;</button>
         </div>
     </div>
-    <div id="About Us">About Us</div>
+    <div id="About Us">
+        <div class="about-us-container">
+            <div class="header-section">
+                <h2 style="color: white">About Us</h2>
+            </div>
+            <div class="bio-layout">
+                <div class="bio-image-1" style="background: url(./assets/photos/foto1.jpg)">
+                    <div class="bio-name"><span>NOME COGNOME</span></div>
+                </div>
+                <div class="bio-description">
+                    <div class="quote"><span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+— Cicerone, de Finibus Bonorum et Malorum</span></div>
+                    <div class="biography"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                    </div>
+                </div>
+                <div class="bio-image-2" style="background: url(./assets/photos/foto2.jpg)">
+                    <div class="bio-name"><span>NOME COGNOME</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="Contact">Contact</div>
 </main>
 
@@ -96,8 +116,8 @@
         <span>&copy; 2024 La Tua Azienda</span>
     </nav>
 </footer>
-<script src="./js/slider.js"> </script>
-<script src="./js/loader.js"> </script>
+<script src="./js/slider.js"></script>
+<script src="./js/loader.js"></script>
 </body>
 </html>
 
