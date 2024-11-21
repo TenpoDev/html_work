@@ -1,6 +1,11 @@
-// Simuliamo il caricamento per 3 secondi e poi nascondiamo la schermata di caricamento
-window.onload = function() {
-    setTimeout(function() {
+function simulateAsyncTask() {
+    return new Promise((resolve) => {
+        setTimeout(resolve, 3000); // Simula un caricamento di 3 secondi
+    });
+}
+
+window.onload = function () {
+    simulateAsyncTask().then(() => {
         document.body.classList.add('loaded');
-    }, 3000); // Il caricamento dura 3 secondi
+    });
 };

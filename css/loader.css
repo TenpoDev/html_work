@@ -61,20 +61,15 @@
     }
 }
 
-/* Animazione del cerchio di caricamento */
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
 /* Style per il contenuto della pagina che sarà nascosto fino al completamento del caricamento */
 .content {
     display: none;
 }
 
-/* Nasconde la schermata di caricamento quando la pagina è pronta */
 body.loaded .loader-overlay {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
 }
 
 body.loaded .content {
