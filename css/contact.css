@@ -7,6 +7,16 @@
     max-height: 100vh;
 }
 
+.contact-container .header-section {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
 .contact-layout {
     max-height: calc(100vh - 20vh);
     margin: 20px;
