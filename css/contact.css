@@ -8,27 +8,22 @@
 }
 
 .contact-layout {
-    max-height: calc(100vh - 20vh);
     margin: 20px;
+    max-height: calc(100vh - 20vh);
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    z-index: 600;
     grid-row: 2;
+    z-index: 600;
 }
 
 .contact-description {
+    height: 100%;
+    padding: 20px;
+    max-height: 90%;
     display: flex; /* Attiva Flexbox */
     justify-content: center; /* Centra orizzontalmente */
     align-items: center; /* Centra verticalmente */
-    padding: 20px;
-    height: 100%;
-    max-height: 90%;
-    overflow: hidden;
-    color: white;
-    font-size: 1rem; /* Modifica la dimensione del testo per .biography */
-    font-weight: normal; /* Puoi cambiare lo spessore del testo */
-    line-height: 1.6; /* Imposta lo spazio tra le righe */
 }
 
 /* Begin Right Contact Page */
@@ -45,13 +40,13 @@
 
 .list-item {
     line-height: 4;
-    color: #aaa;
+    color: rgba(255, 255, 255, 1);
 }
 
 .contact-text {
-    font: 300 18px 'Lato', sans-serif;
+    font: 300 18px 'Oswald', sans-serif;
+    /*font: 300 18px 'Lato', sans-serif;*/
     letter-spacing: 1.9px;
-    color: #bbb;
 }
 
 .place {
@@ -67,13 +62,12 @@
 }
 
 .contact-text a {
-    color: #bbb;
     text-decoration: none;
     transition-duration: 0.2s;
 }
 
 .contact-text a:hover {
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 
@@ -89,7 +83,7 @@
 }
 
 .social-media-list li a {
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
 }
 
 .social-media-list li {
@@ -100,8 +94,8 @@
     margin: 10px 3px;
     line-height: 60px;
     border-radius: 50%;
-    color: #fff;
-    background-color: rgb(27,27,27);
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(35, 40, 43, 1);
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
@@ -116,22 +110,22 @@
     line-height: 60px;
     border-radius: 50%;
     opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
     transition: all .2s ease-in-out;
 }
 
 .social-media-list li:hover {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .social-media-list li:hover:after {
     opacity: 1;
     transform: scale(1.12);
-    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
 }
 
 .social-media-list li:hover a {
-    color: #000;
+    color: rgba(35, 40, 43, 1);
 }
 
 .copyright {
@@ -140,61 +134,51 @@
     text-align: center;
 }
 
-hr {
-    border-color: rgba(255,255,255,.6);
-}
-
-
-form { max-width:420px; margin:50px auto; }
-label {
-    width: 100%;
-}
-
 .contact-form {
     width: 100%;
     max-width: 400px; /* Limita la larghezza del form */
     padding: 20px;
-    background-color: rgba(35,40,43,0.6); /* Sfondo del form */
+    background-color: rgba(35, 40, 43, 0.6); /* Sfondo del form */
     border-radius: 8px; /* Angoli arrotondati */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effetto ombra */
 }
 
 .feedback-input {
+    color: rgba(255, 255, 255, 1);
     font-family: Helvetica, Arial, sans-serif;
-    font-weight:500;
+    font-weight: 500;
     font-size: 18px;
     border-radius: 5px;
     line-height: 22px;
     background-color: transparent;
-    border:2px solid darkgoldenrod;
+    border: 2px solid rgba(255, 255, 255, .6);
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
-    width:100%;
+    width: 100%;
     box-sizing: border-box;
-    outline:0;
+    outline: 0;
 }
 
-.feedback-input:focus { border:2px solid darkgoldenrod; }
-
-textarea {
-    height: 150px;
-    line-height: 150%;
-    resize:vertical;
+.feedback-input:focus {
+    border: 2px solid rgba(255, 255, 255, 1);
 }
 
 [type="submit"] {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
     width: 100%;
-    background:darkgoldenrod;
-    border-radius:5px;
-    border:0;
-    cursor:pointer;
-    font-size:24px;
-    padding-top:10px;
-    padding-bottom:10px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     transition: all 0.3s;
-    margin-top:-4px;
-    font-weight:700;
+    margin-top: -4px;
+    font-weight: 700;
 }
-[type="submit"]:hover { background:darkgoldenrod; }
+
+[type="submit"]:hover {
+    background: rgba(255, 255, 255, 1);
+}

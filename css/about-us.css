@@ -62,8 +62,6 @@
 
 }
 
-
-
 .bio-description::-webkit-scrollbar {
     display: none; /* Nasconde la scrollbar (Webkit: Chrome, Edge, Safari) */
 }

@@ -9,7 +9,6 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     emailjs.sendForm("service_fc1hdrp", "template_cziybgs", this)
         .then(function() {
             document.getElementById("contact-form").reset();
-            alert("Email inviata con successo!");
         }, function(error) {
             alert("Errore nell'invio: " + error.text);
         });
