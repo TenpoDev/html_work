@@ -4,21 +4,145 @@
 @import "contact.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css";
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css";
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
-
 
 
 body {
     margin: 0;
     padding: 0;
-    /*font-family: Arial, sans-serif;*/
-    background-color: black;
-    /*min-width: 600px;*/
+    background-color: rgba(10, 25, 47, 1);
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+a {
+    color: rgba(255, 255, 255, 1);
 }
 
 label {
-    color: white;
+    /*color: white;*/
 }
+
+main {
+    display: flex;
+    flex-direction: column; /* Organizza i div in colonna */
+}
+
+main > section {
+    height: 100vh; /* Ogni sezione occupa l'altezza della finestra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer {
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow:  0 15px 25px #505050;
+    background-color: rgba(35, 40, 43, 1);
+    z-index: 1000;
+}
+
+/* Stile del header */
+header {
+    top: 0;
+    position: fixed;
+    padding: 20px 40px;
+}
+
+/* Stile del footer */
+footer {
+    bottom: 0;
+    padding: 10px 20px;
+}
+
+/* Stile del contenitore nav */
+header nav {
+    display: flex;
+    align-items: flex-end; /* Allinea tutto alla base dell'immagine */
+    gap: 10px; /* Spaziatura tra gli elementi */
+}
+
+/* Stile degli anchor nel header */
+header nav a,
+header nav p {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 6px;
+
+}
+
+header nav a {
+    font-size: 40px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav p {
+    font-size: 20px;
+}
+
+/* Stile per l'immagine */
+header nav img {
+    max-width: 70px;
+    height: auto;
+}
+
+/* Stile della navigazione nel footer */
+footer span {
+    margin: 0 10px;
+    text-align: center;
+    font: 200 14px 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+.button {
+    opacity: 1;
+    border: none;
+    padding: 0.7em 1.7em;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px #505050;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    z-index: 100;
+}
+
+.button:hover {
+    z-index: 150;
+    opacity: 0.6;
+    color: rgba(255,255,255,1);
+    background-color: rgba(35, 40, 43, 0.9);
+}
+
+
+/*color: #555;*/
+
+/*rgba(10, 25, 47, 1) -- main*/
+/*rgba(13, 42, 76, 1) */
+/*rgba(96, 165, 250, 1) --off*/
+/*rgba(173, 216, 230, 1)*/
+/*rgba(255, 255, 255, 1) --bottoni*/
+/*rgba(248, 249, 250, 1)*/
+
+/*rgba(23, 54, 93, 1) -- main*/
+/*rgba(34, 56, 90, 1)*/
+/*rgba(75, 85, 99, 1) --off*/
+/*rgba(107, 114, 128, 1)*/
+/*rgba(229, 231, 235, 1)*/
+/*rgba(243, 244, 246, 1)*/

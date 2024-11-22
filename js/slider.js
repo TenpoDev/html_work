@@ -1,5 +1,7 @@
 let slideIndex = 1;
 
+
+//TODO: rivedere logia del content
 function resetSlideAnimations(slide) {
     const content = slide.querySelector(".content");
     const title = slide.querySelector(".title");
@@ -19,11 +21,11 @@ function resetSlideAnimations(slide) {
 }
 
 function applySlideAnimations(slide) {
-    const content = slide.querySelector(".content");
+    // const content = slide.querySelector(".content");
     const title = slide.querySelector(".title");
     const description = slide.querySelector(".description");
 
-    content.style.animation = 'fadeIn 1s forwards';
+    // content.style.animation = 'fadeIn 1s forwards';
     title.style.animation = 'fadeIn 3s forwards';
     description.style.animation = 'fadeIn 5s forwards';
 }

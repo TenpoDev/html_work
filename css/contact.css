@@ -146,7 +146,6 @@
 
 .copyright {
     font: 200 14px 'Oswald', sans-serif;
-    color: #555;
     letter-spacing: 1px;
     text-align: center;
 }
@@ -171,7 +170,6 @@ label {
 }
 
 .feedback-input {
-    color:white;
     font-family: Helvetica, Arial, sans-serif;
     font-weight:500;
     font-size: 18px;
@@ -202,7 +200,6 @@ textarea {
     border-radius:5px;
     border:0;
     cursor:pointer;
-    color: rgba(35,40,43,0.6);;
     font-size:24px;
     padding-top:10px;
     padding-bottom:10px;

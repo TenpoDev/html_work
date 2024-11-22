@@ -13,7 +13,6 @@
     position: relative;
     font-weight: 300;
     font-size: 40px;
-    color: white;
     transition: all 0.4s ease 0s;
     grid-row: 1;
 }
@@ -95,7 +94,6 @@
     overflow-y: auto; /* Rende scrollabile */
     padding: 10px;
     text-align: justify;
-    color: white;
     font-size: 1rem; /* Modifica la dimensione del testo per .biography */
     font-weight: normal; /* Puoi cambiare lo spessore del testo */
     line-height: 1.6; /* Imposta lo spazio tra le righe */
@@ -119,6 +117,5 @@
     margin: 0; /* Rimuove margini che potrebbero causare sbordamenti */
     padding: 10px; /* Spazio interno per un aspetto gradevole */
     box-sizing: border-box; /* Include il padding nella larghezza */
-    background-color: rgba(255, 255, 255, 0.7); /* Sfondo semitrasparente */
     text-align: center; /* Centra il testo */
 }
