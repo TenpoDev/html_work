@@ -1,12 +1,25 @@
 @import "loader.css";
 @import "home.css";
-@import "aboutUs.css";
+@import "about-us.css";
 @import "contact.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css";
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 1); /* Colore del pollice */
+    border-radius: 6px; /* Bordo arrotondato */
+    border: 2px solid rgba(35, 40, 43, 0.9); /* Margine interno */
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* Larghezza della scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(35, 40, 43, 1);
+}
 
 body {
     margin: 0;
@@ -105,6 +118,12 @@ footer span {
     letter-spacing: 1px;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .button {
     opacity: 1;
     border: none;
@@ -136,6 +155,15 @@ footer span {
     width: 80%;
     margin: 0 auto; /* Centra orizzontalmente */
     background: linear-gradient(90deg, hsl(0, 0%, 20%), hsl(0, 0%, 50%), hsl(0, 0%, 70%), hsl(0, 0%, 20%));
+}
+
+.header-section {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 100 60px 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
 }
 
 

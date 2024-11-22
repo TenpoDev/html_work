@@ -1,0 +1,78 @@
+.about-us-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    max-height: 100vh;
+    grid-template-rows: 20vh 80vh;
+}
+
+.bio-layout {
+    max-height: calc(100vh - 20vh);
+    margin: 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    z-index: 600;
+    grid-row: auto;
+}
+
+.bio-image {
+    border-radius: 20px;
+    margin: 20px;
+    grid-column: auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.bio-description {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto; /* Prima riga (quote) è dinamica, seconda (biography) occupa il resto */
+    height: 100%; /* Assicurati che il contenitore abbia un'altezza definita */
+    max-height: 90%; /* Limita l'altezza totale della bio-description */
+    overflow: hidden; /* Evita overflow non desiderati */
+}
+
+.bio-description .biography {
+    grid-row: 1; /* Posiziona nella seconda riga */
+    overflow-y: auto; /* Rende scrollabile */
+    padding: 10px;
+    text-align: justify;
+    font-size: 1rem; /* Modifica la dimensione del testo per .biography */
+    font-weight: normal; /* Puoi cambiare lo spessore del testo */
+    line-height: 1.6; /* Imposta lo spazio tra le righe */
+}
+
+
+.bio-description .biography::-webkit-scrollbar-thumb {
+    background-color: rgba(35, 40, 43, 0.9); /* Colore del pollice */
+    border-radius: 6px; /* Bordo arrotondato */
+    border: rgba(35, 40, 43, 0.9); /* Margine interno */
+}
+
+.bio-description .biography::-webkit-scrollbar {
+    width: 3px; /* Larghezza della scrollbar */
+}
+
+.bio-description .biography::-webkit-scrollbar-track {
+    background-color: rgba(10, 25, 47, 1);
+
+}
+
+
+
+.bio-description::-webkit-scrollbar {
+    display: none; /* Nasconde la scrollbar (Webkit: Chrome, Edge, Safari) */
+}
+
+.bio-name {
+    width: 100%; /* Si adatta alla larghezza del contenitore */
+    margin: 0; /* Rimuove margini che potrebbero causare sbordamenti */
+    padding: 10px; /* Spazio interno per un aspetto gradevole */
+    box-sizing: border-box; /* Include il padding nella larghezza */
+    text-align: center; /* Centra il testo */
+    background-color: rgba(35, 40, 43, 0.9);
+}
