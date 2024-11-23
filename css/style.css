@@ -207,10 +207,13 @@ textarea {
     }
 
     main > section {
-        height: 160vh; /* Ogni sezione occupa l'altezza della finestra */
         display: flex;
         justify-content: center;
         align-items: stretch;
+    }
+
+    main > #Contact  {
+        height: 150vh;
     }
 
     header{

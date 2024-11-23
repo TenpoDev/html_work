@@ -1,32 +1,15 @@
-/*!* Responsive design per dispositivi più piccoli *!*/
-/*@media (max-width: 600px) {*/
-/*    header, footer {*/
-/*        padding: 10px;*/
-/*        text-align: center;*/
-/*    }*/
-
-/*    header nav a, footer nav a {*/
-/*        display: block;*/
-/*        margin: 5px 0;*/
-/*    }*/
-
-/*    main > div {*/
-/*        font-size: 1.5rem;*/
-/*    }*/
-/*}*/
-
 .content > a {
     color: rgba(35, 40, 43, 1);
     text-transform: uppercase;
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .content > a:hover {
-    z-index: 150;
+    z-index: 100;
     opacity: 0.6;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     background-color: rgba(35, 40, 43, 0.9);
 }
 
@@ -121,13 +104,33 @@
     width: 33%;
     margin: 20px;
     border-radius: 20px;
-    box-shadow: 0 30px 50px rgba(80, 80, 80,1);
+    box-shadow: 0 30px 50px rgba(80, 80, 80, 1);
     background-position: 50% 50%;
     transform: translate(0, 15%);
 }
 
 .slide-gallery .column:nth-last-child(-n+2) {
     display: none;
+}
+
+.slide-gallery .column:nth-child(1) {
+    background-image: url(/assets/images/1.jpeg);
+}
+
+.slide-gallery .column:nth-child(2) {
+    background-image: url(/assets/images/2.jpg);
+}
+
+.slide-gallery .column:nth-child(3) {
+    background-image: url(/assets/images/3.jpg);
+}
+
+.slide-gallery .column:nth-child(4) {
+    background-image: url(/assets/images/4.jpg);
+}
+
+.slide-gallery .column:nth-child(5) {
+    background-image: url(/assets/images/5.jpg);
 }
 
 .slide-cursor {
@@ -149,8 +152,51 @@
 }
 
 @media (max-width: 769px) {
-    .slide-gallery, .slide-cursor {
+    .slide-cursor {
         display: none;
     }
-//TODO::: FORZARE VH a 150 solo nell'ultima section'
+
+    .slide-container .slide .item .content {
+        width: 65%;
+
+    }
+
+    .slide-gallery {
+        bottom: 10px;
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        z-index: 500;
+    }
+
+    .slide-gallery .column:nth-child(1),
+    .slide-gallery .column:nth-child(2),
+    .slide-gallery .column:nth-child(3) {
+        background-image: none;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    #Home {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slide-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 300%; /* 100% per ogni slide */
+    }
+
 }
