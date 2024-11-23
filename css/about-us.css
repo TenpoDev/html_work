@@ -74,3 +74,35 @@
     text-align: center; /* Centra il testo */
     background-color: rgba(35, 40, 43, 0.9);
 }
+
+
+@media (max-width: 768px) {
+    .bio-layout {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    .bio-image {
+        grid-row: 1;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .bio-description {
+        position: absolute;
+        grid-row: 2; /* Posiziona le descrizioni nella seconda riga */
+        width: 100%; /* Occupare tutta la larghezza disponibile */
+        padding: 10px; /* Margini interni */
+    }
+
+    .bio-description .biography {
+        overflow-y: auto; /* Scrollabile per testi lunghi */
+        text-align: justify; /* Allinea il testo */
+        font-size: 1rem; /* Dimensione del testo */
+        line-height: 1.5; /* Altezza della linea per migliorare la leggibilità */
+    }
+}
+

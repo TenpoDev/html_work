@@ -7,6 +7,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+/*table -- @media (min-width: 769px) and (max-width: 1024px)*/
+/*phone -- @media (min-width: 768px)*/
+
 ::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 1); /* Colore del pollice */
     border-radius: 6px; /* Bordo arrotondato */
@@ -186,6 +189,34 @@ textarea {
     letter-spacing: 6px;
 }
 
+
+@media (max-width: 769px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Altezza minima per il body */
+    }
+
+    main {
+        flex-grow: 1; /* Fa sì che il main si espanda per occupare lo spazio rimanente */
+    }
+
+    footer {
+        position: static; /* Rimuove la posizione fissa */
+        margin-top: 20px; /* Aggiunge uno spazio sopra il footer */
+    }
+
+    main > section {
+        height: 160vh; /* Ogni sezione occupa l'altezza della finestra */
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    header{
+        display: none;
+    }
+}
 
 /*color: #555;*/
 

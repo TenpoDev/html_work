@@ -182,3 +182,26 @@
 [type="submit"]:hover {
     background: rgba(255, 255, 255, 1);
 }
+
+@media (max-width: 769px) {
+    .contact-layout {
+        display: flex; /* Cambia da grid a flex */
+        flex-direction: column; /* Imposta gli elementi in colonna */
+        align-items: center; /* Centra gli elementi */
+        margin: 20px 0; /* Spaziatura verticale */
+    }
+
+    .contact-description, .contact-form {
+        max-width: 50%; /* Imposta la larghezza al 100% */
+        padding: 10px; /* Aggiungi un po' di padding per spaziatura */
+    }
+
+    .direct-contact-container {
+        margin-bottom: 20px; /* Aggiungi spazio sotto */
+    }
+
+}
+
+
+
+

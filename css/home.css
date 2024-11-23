@@ -147,3 +147,10 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 769px) {
+    .slide-gallery, .slide-cursor {
+        display: none;
+    }
+//TODO::: FORZARE VH a 150 solo nell'ultima section'
+}
