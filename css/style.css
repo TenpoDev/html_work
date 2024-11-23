@@ -56,8 +56,6 @@ main > section {
 header, footer {
     left: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
     box-shadow: 0 15px 25px rgba(80, 80, 80, 1);
     background-color: rgba(35, 40, 43, 1);
     z-index: 1000;
@@ -67,19 +65,22 @@ header, footer {
 header {
     top: 0;
     position: fixed;
-    padding: 20px 40px;
+    padding: 0 40px;
 }
 
 /* Stile del footer */
 footer {
     bottom: 0;
+    display: flex;
+    justify-content: center;
     padding: 10px 20px;
 }
 
 /* Stile del contenitore nav */
 header nav {
     display: flex;
-    align-items: flex-end; /* Allinea tutto alla base dell'immagine */
+    justify-content: space-between;
+    align-items: flex-end;
     gap: 10px; /* Spaziatura tra gli elementi */
 }
 
@@ -90,12 +91,12 @@ header nav p {
     text-transform: uppercase;
     font-weight: 300;
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
 
 }
 
 header nav a {
-    font-size: 40px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -108,9 +109,15 @@ header nav p {
 }
 
 /* Stile per l'immagine */
-header nav img {
+.nav-logo img {
     max-width: 70px;
     height: auto;
+}
+
+.nav-links {
+    padding-top: 10px;
+    display: flex;
+    gap: 5px; /* Spaziatura tra i link */
 }
 
 /* Stile della navigazione nel footer */
@@ -212,11 +219,11 @@ textarea {
         align-items: stretch;
     }
 
-    main > #Contact  {
+    main > #Contact {
         height: 150vh;
     }
 
-    header{
+    header {
         display: none;
     }
 }
