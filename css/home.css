@@ -113,26 +113,6 @@
     display: none;
 }
 
-.slide-gallery .column:nth-child(1) {
-    background-image: url(/assets/images/1.jpeg);
-}
-
-.slide-gallery .column:nth-child(2) {
-    background-image: url(/assets/images/2.jpg);
-}
-
-.slide-gallery .column:nth-child(3) {
-    background-image: url(/assets/images/3.jpg);
-}
-
-.slide-gallery .column:nth-child(4) {
-    background-image: url(/assets/images/4.jpg);
-}
-
-.slide-gallery .column:nth-child(5) {
-    background-image: url(/assets/images/5.jpg);
-}
-
 .slide-cursor {
     position: absolute;
     z-index: 600;
