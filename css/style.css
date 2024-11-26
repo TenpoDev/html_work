@@ -206,7 +206,7 @@ textarea {
 }
 
 
-@media (max-width: 769px) {
+@media (min-width: 376px) and (max-width: 769px) {
     body {
         display: flex;
         flex-direction: column;
@@ -234,5 +234,11 @@ textarea {
 
     header {
         display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    main > #Contact {
+        height: 275vh;
     }
 }

@@ -131,52 +131,15 @@
     }
 }
 
-@media (max-width: 769px) {
-    .slide-cursor {
+@media (max-width: 1024px) {
+    .slide-gallery {
         display: none;
     }
 
     .slide-container .slide .item .content {
-        width: 65%;
-
-    }
-
-    .slide-gallery {
-        bottom: 10px;
-        position: absolute;
-        display: flex;
-        align-items: flex-end;
-        z-index: 500;
-    }
-
-    .slide-gallery .column:nth-child(1),
-    .slide-gallery .column:nth-child(2),
-    .slide-gallery .column:nth-child(3) {
-        background-image: none;
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active, .dot:hover {
-        background-color: #717171;
-    }
-
-    #Home {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .slide-container {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        width: 300%; /* 100% per ogni slide */
+        left: 2%;
+        bottom: 30%;
+        width: 80%;
     }
 
 }
